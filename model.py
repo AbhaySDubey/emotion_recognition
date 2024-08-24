@@ -21,7 +21,7 @@ prediction = model.predict(img)
 
 predicted = np.argmax(prediction, axis=1)
 class_names = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
-label = class_names[predicted][1]
+label = class_names[predicted]
 
 print(f'Predicted class: {label}')
 
